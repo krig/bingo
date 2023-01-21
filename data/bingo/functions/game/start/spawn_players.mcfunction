@@ -22,6 +22,7 @@ effect give @s minecraft:weakness 1000000 255 true
 clear @s
 experience set @s 0 levels
 experience set @s 0 points
+advancement revoke @s everything
 
 tag @s remove bingo.has_slot0
 tag @s remove bingo.has_slot1
