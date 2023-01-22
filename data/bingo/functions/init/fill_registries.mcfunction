@@ -322,6 +322,27 @@ data modify storage bingo:registries items append value {id: "bingo:cooked_rabbi
 ## 005c: slowness_arrow
 data modify storage bingo:registries items append value {id: "bingo:slowness_arrow", item: {id: "minecraft:tipped_arrow", tag: {Potion: "minecraft:slowness"}}, textComponent: '{"translate": "item.minecraft.tipped_arrow.effect.slowness", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:tipped_arrow", "tag": "{Potion: \\"minecraft:slowness\\"}"}}}', icon: '"\\u005c"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:tipped_arrow{Potion: 'minecraft:slowness'} 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:tipped_arrow{Potion: 'minecraft:slowness'} 1", categories: [{id: "bingo:skeleton_drops"}, {id: "bingo:nighttime_mob_drops", weight: 3}]}
 
+## 005c: armor_stand
+data modify storage bingo:registries items append value {id: "bingo:armor_stand", item: {id: "minecraft:armor_stand"}, textComponent: '{"translate": "block.minecraft.armor_stand", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:armor_stand"}}}', icon: '"\\u005c"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:armor_stand 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:armor_stand 1", categories: ["bingo:furnace"]}
+
+## 005d: lantern
+data modify storage bingo:registries items append value {id: "bingo:lantern", item: {id: "minecraft:lantern"}, textComponent: '{"translate": "block.minecraft.lantern", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:lantern"}}}', icon: '"\\u005d"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:lantern 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:lantern 1", categories: ["bingo:chest_iron"]}
+
+## 005e: campfire
+data modify storage bingo:registries items append value {id: "bingo:campfire", item: {id: "minecraft:campfire"}, textComponent: '{"translate": "block.minecraft.campfire", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:campfire"}}}', icon: '"\\u005e"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:campfire 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:campfire 1", categories: ["bingo:furnace"]}
+
+## 0060: carrot_on_a_stick
+data modify storage bingo:registries items append value {id: "bingo:carrot_on_a_stick", item: {id: "minecraft:carrot_on_a_stick"}, textComponent: '{"translate": "block.minecraft.carrot_on_a_stick", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:carrot_on_a_stick"}}}', icon: '"\\u0060"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:carrot_on_a_stick 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:carrot_on_a_stick 1", categories: ["bingo:extra_smelt"]}
+
+## 0061: honey_bottle
+data modify storage bingo:registries items append value {id: "bingo:honey_bottle", item: {id: "minecraft:honey_bottle"}, textComponent: '{"translate": "block.minecraft.honey_bottle", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:honey_bottle"}}}', icon: '"\\u0061"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:honey_bottle 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:honey_bottle 1", categories: ["bingo:nighttime_mob_drops"]}
+
+## 0062: poisonous_potato
+data modify storage bingo:registries items append value {id: "bingo:poisonous_potato", item: {id: "minecraft:poisonous_potato"}, textComponent: '{"translate": "block.minecraft.poisonous_potato", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:poisonous_potato"}}}', icon: '"\\u0062"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:poisonous_potato 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:poisonous_potato 1", categories: ["bingo:chest_loot"]}
+
+## 0063: pufferfish
+data modify storage bingo:registries items append value {id: "bingo:pufferfish", item: {id: "minecraft:pufferfish"}, textComponent: '{"translate": "block.minecraft.pufferfish", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:pufferfish"}}}', icon: '"\\u0063"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:pufferfish 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:pufferfish 1", categories: ["bingo:fish"]}
+
 ## 0100: iron_block
 data modify storage bingo:registries items append value {id: "bingo:iron_block", item: {id: "minecraft:iron_block"}, textComponent: '{"translate": "block.minecraft.iron_block", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:iron_block"}}}', icon: '"\\u0100"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:iron_block 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:iron_block 1", categories: ["bingo:extra_smelt"]}
 
@@ -409,41 +430,20 @@ data modify storage bingo:registries items append value {id: "bingo:orange_concr
 ## 011e: pink_glazed_terracotta
 data modify storage bingo:registries items append value {id: "bingo:pink_glazed_terracotta", item: {id: "minecraft:pink_glazed_terracotta"}, textComponent: '{"translate": "block.minecraft.pink_glazed_terracotta", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:pink_glazed_terracotta"}}}', icon: '"\\u011e"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:pink_glazed_terracotta 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:pink_glazed_terracotta 1", categories: ["bingo:clay"], weight: 2}
 
-## 0123: light_blue_glazed_terracotta
-data modify storage bingo:registries items append value {id: "bingo:light_blue_glazed_terracotta", item: {id: "minecraft:light_blue_glazed_terracotta"}, textComponent: '{"translate": "block.minecraft.light_blue_glazed_terracotta", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:light_blue_glazed_terracotta"}}}', icon: '"\\u0123"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:light_blue_glazed_terracotta 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:light_blue_glazed_terracotta 1", categories: ["bingo:clay"], weight: 2}
-
-## 005c: armor_stand
-data modify storage bingo:registries items append value {id: "bingo:armor_stand", item: {id: "minecraft:armor_stand"}, textComponent: '{"translate": "block.minecraft.armor_stand", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:armor_stand"}}}', icon: '"\\u005c"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:armor_stand 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:armor_stand 1", categories: ["bingo:furnace"]}
-
-## 005d: lantern
-data modify storage bingo:registries items append value {id: "bingo:lantern", item: {id: "minecraft:lantern"}, textComponent: '{"translate": "block.minecraft.lantern", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:lantern"}}}', icon: '"\\u005d"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:lantern 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:lantern 1", categories: ["bingo:chest_iron"]}
-
-## 005e: campfire
-data modify storage bingo:registries items append value {id: "bingo:campfire", item: {id: "minecraft:campfire"}, textComponent: '{"translate": "block.minecraft.campfire", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:campfire"}}}', icon: '"\\u005e"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:campfire 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:campfire 1", categories: ["bingo:furnace"]}
-
-## 0060: carrot_on_a_stick
-data modify storage bingo:registries items append value {id: "bingo:carrot_on_a_stick", item: {id: "minecraft:carrot_on_a_stick"}, textComponent: '{"translate": "block.minecraft.carrot_on_a_stick", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:carrot_on_a_stick"}}}', icon: '"\\u0060"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:carrot_on_a_stick 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:carrot_on_a_stick 1", categories: ["bingo:extra_smelt"]}
-
-## 0061: honey_bottle
-data modify storage bingo:registries items append value {id: "bingo:honey_bottle", item: {id: "minecraft:honey_bottle"}, textComponent: '{"translate": "block.minecraft.honey_bottle", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:honey_bottle"}}}', icon: '"\\u0061"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:honey_bottle 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:honey_bottle 1", categories: ["bingo:nighttime_mob_drops"]}
-
-## 0122: light_gray_banner
-data modify storage bingo:registries items append value {id: "bingo:light_gray_banner", item: {id: "minecraft:light_gray_banner"}, textComponent: '{"translate": "block.minecraft.light_gray_banner", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:light_gray_banner"}}}', icon: '"\\u0122"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:light_gray_banner 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:light_gray_banner 1", categories: ["bingo:wool"]}
-
-## 0121: barrel
-data modify storage bingo:registries items append value {id: "bingo:barrel", item: {id: "minecraft:barrel"}, textComponent: '{"translate": "block.minecraft.barrel", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:barrel"}}}', icon: '"\\u0121"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:barrel 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:barrel 1", categories: ["bingo:chest_loot"]}
-
-## 0062: poisonous_potato
-data modify storage bingo:registries items append value {id: "bingo:poisonous_potato", item: {id: "minecraft:poisonous_potato"}, textComponent: '{"translate": "block.minecraft.poisonous_potato", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:poisonous_potato"}}}', icon: '"\\u0062"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:poisonous_potato 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:poisonous_potato 1", categories: ["bingo:chest_loot"]}
-
-## 0063: pufferfish
-data modify storage bingo:registries items append value {id: "bingo:pufferfish", item: {id: "minecraft:pufferfish"}, textComponent: '{"translate": "block.minecraft.pufferfish", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:pufferfish"}}}', icon: '"\\u0063"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:pufferfish 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:pufferfish 1", categories: ["bingo:fish"]}
+## 011f: cracked_stone_bricks
+data modify storage bingo:registries items append value {id: "bingo:cracked_stone_bricks", item: {id: "minecraft:cracked_stone_bricks"}, textComponent: '{"translate": "block.minecraft.cracked_stone_bricks", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:cracked_stone_bricks"}}}', icon: '"\\u011f"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:cracked_stone_bricks 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:cracked_stone_bricks 1", categories: ["bingo:extra_smelt"]}
 
 ## 0120: chiseled_stone_bricks
 data modify storage bingo:registries items append value {id: "bingo:chiseled_stone_bricks", item: {id: "minecraft:chiseled_stone_bricks"}, textComponent: '{"translate": "block.minecraft.chiseled_stone_bricks", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:chiseled_stone_bricks"}}}', icon: '"\\u0120"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:chiseled_stone_bricks 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:chiseled_stone_bricks 1", categories: ["bingo:extra_smelt"]}
 
-## 011f: cracked_stone_bricks
-data modify storage bingo:registries items append value {id: "bingo:cracked_stone_bricks", item: {id: "minecraft:cracked_stone_bricks"}, textComponent: '{"translate": "block.minecraft.cracked_stone_bricks", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:cracked_stone_bricks"}}}', icon: '"\\u011f"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:cracked_stone_bricks 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:cracked_stone_bricks 1", categories: ["bingo:extra_smelt"]}
+## 0121: barrel
+data modify storage bingo:registries items append value {id: "bingo:barrel", item: {id: "minecraft:barrel"}, textComponent: '{"translate": "block.minecraft.barrel", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:barrel"}}}', icon: '"\\u0121"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:barrel 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:barrel 1", categories: ["bingo:chest_loot"]}
+
+## 0122: light_gray_banner
+data modify storage bingo:registries items append value {id: "bingo:light_gray_banner", item: {id: "minecraft:light_gray_banner"}, textComponent: '{"translate": "block.minecraft.light_gray_banner", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:light_gray_banner"}}}', icon: '"\\u0122"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:light_gray_banner 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:light_gray_banner 1", categories: ["bingo:wool"]}
+
+## 0123: light_blue_glazed_terracotta
+data modify storage bingo:registries items append value {id: "bingo:light_blue_glazed_terracotta", item: {id: "minecraft:light_blue_glazed_terracotta"}, textComponent: '{"translate": "block.minecraft.light_blue_glazed_terracotta", "hoverEvent": {"action": "show_item", "contents": {"id": "minecraft:light_blue_glazed_terracotta"}}}', icon: '"\\u0123"', detectCommand: "execute as @a[tag=bingo.check_slot] store success score @s bingo.has_item run clear @s minecraft:light_blue_glazed_terracotta 0", clearCommand: "clear @a[tag=bingo.clear] minecraft:light_blue_glazed_terracotta 1", categories: ["bingo:clay"], weight: 2}
 
 # structures
 data modify storage bingo:registries structures append value "bingo:credits"
